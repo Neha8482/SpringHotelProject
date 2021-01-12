@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd"> 
+
+  <hibernate-mapping package="com.xoriant.beans">
+    <class name="Guest" table="guest">
+       <id name="guestId" column="guest_id">
+          <generator class="increment"></generator>
+       </id>
+       <property name="guestName" column="guest_name"></property>
+       <property name="email" column="email"></property>
+        <property name="contactNumber" column="contact_number"></property>
+         <property name="gender" column="gender"></property>
+    </class>
+    <class name="Guest" table="guestlogin">
+    <id name="guestid" column="guest_id">
+    <generator class="increment"></generator>
+    </id>
+    <property name="password" column="password"></property>
+    </class>
+ </hibernate-mapping>

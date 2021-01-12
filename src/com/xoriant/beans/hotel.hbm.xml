@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd"> 
+
+  <hibernate-mapping package="com.xoriant.beans">
+    <class name="Hotel" table="hotel">
+       <id name="hotelId" column="hotel_id">
+          <generator class="increment"></generator>
+       </id>
+       <property name="HotelName" column="hotel_name"></property>
+    </class>
+ </hibernate-mapping>
