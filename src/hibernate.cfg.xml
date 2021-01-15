@@ -21,5 +21,7 @@
    <mapping class="com.xoriant.beans.Userlogin"/>
       <mapping class="com.xoriant.beans.Hotellogin"/>
          <mapping class="com.xoriant.beans.Address"/>
+           <mapping class="com.xoriant.beans.Booking"/>
+        
    </session-factory>
 </hibernate-configuration> 

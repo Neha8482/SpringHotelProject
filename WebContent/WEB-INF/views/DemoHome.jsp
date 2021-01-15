@@ -4,15 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Demo Home Page</title>
 </head>
 <body>
-<form action="http://localhost:8080/SpringFinalProject/manager" method="post">
-          UserId : <input type="text" name="userId">
-         <br/>
-          Password : <input type="text" name="password">
-         <br/>
-         <input type="submit" value="Click">
-    </form>
+<a href="UserLogin">Guest Login</a>
+<br/>
+<a href="GuestForm">Guest Registration</a>
+<br/>
+<br/>
+
+<a href="HotelLogin">Hotel Manager LOGIN</a>
+<br/>
+<a href="HotelForm">Register Hotel</a>
+
+<br/>
+<a href="hotels">See All Hotels</a>
 </body>
 </html>

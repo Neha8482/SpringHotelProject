@@ -7,12 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8080/SpringFinalProject/manager" method="post">
-          UserId : <input type="text" name="userId">
-         <br/>
-          Password : <input type="text" name="password">
-         <br/>
-         <input type="submit" value="Click">
-    </form>
+No Bookings Available
 </body>
 </html>

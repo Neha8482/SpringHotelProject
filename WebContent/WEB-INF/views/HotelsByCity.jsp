@@ -5,10 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hotel List</title>
+<title>Hotel List By City</title>
 </head>
 <body>
-
 <table border="2" width="70%" cellpadding="2">
 	<thead>
 	<th>NAME</th>
@@ -18,31 +17,18 @@
 	</thead>
 	
 	<tbody>
-	<c:forEach var="hotel" items="${hotelList}">
+	<c:forEach var="hotel" items="${hotelListByCity}">
 	<tr>
 		<td>${hotel.hotelName}</td>
 		<td>${hotel.address.city}</td>
 		<td>${hotel.room_cost_perDay}</td>
-		<td><a href="bookHotel/${hotel.hotelId}">Book</a> </td>	</tr>
+		<td><a href="#">BOOK</a></td>
+	</tr>
+		
 	</c:forEach>
 	</tbody>
 	
 </table>
 
-
-<a href="lowToHigh">Price Low to High</a>
-</br>
-<a href="highToLow">Price High to Low</a>
-<form action="http://localhost:8080/SpringFinalProject/searchHotels" method="post">
-  Search By City : <input type="text" name="city">
-         <br/>
-        <input type="submit" value="Search">
-</form>
-
-<form action="http://localhost:8080/SpringFinalProject/userBookingDetails" method="post">
-	<input type="hidden" name="email" value="${email}">
-	<input type="submit" value="My Bookings">
-</form>
-<a href="UserProfile/${id}">Update Profile</a>
 </body>
 </html>

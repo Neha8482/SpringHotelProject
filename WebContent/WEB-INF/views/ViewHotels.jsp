@@ -23,7 +23,7 @@
 		<td>${hotel.hotelName}</td>
 		<td>${hotel.address.city}</td>
 		<td>${hotel.room_cost_perDay}</td>
-		<td><a href="bookHotel/${hotel.hotelId}">Book</a> </td>	</tr>
+		<td><a href="Selected.jsp?HotelId=${hotel.hotelId}">Book</a> </td>	</tr>
 	</c:forEach>
 	</tbody>
 	
@@ -39,10 +39,6 @@
         <input type="submit" value="Search">
 </form>
 
-<form action="http://localhost:8080/SpringFinalProject/userBookingDetails" method="post">
-	<input type="hidden" name="email" value="${email}">
-	<input type="submit" value="My Bookings">
-</form>
-<a href="UserProfile/${id}">Update Profile</a>
+
 </body>
 </html>

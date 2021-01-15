@@ -44,6 +44,9 @@ public class Hotel {
 	@OneToOne(targetEntity=Address.class,cascade=CascadeType.ALL)
 	private Address address;
 
+	public Hotel() {
+		// TODO Auto-generated constructor stub
+	}
 	public Hotel(String hotelName, String contactNumber, double room_cost_perDay, Integer noOfRooms, String email,
 			String password, Address address) {
 		super();

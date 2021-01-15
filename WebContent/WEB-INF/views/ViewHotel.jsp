@@ -7,12 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8080/SpringFinalProject/manager" method="post">
-          UserId : <input type="text" name="userId">
-         <br/>
-          Password : <input type="text" name="password">
-         <br/>
-         <input type="submit" value="Click">
-    </form>
+ 
+
+Name :  ${hotel.hotelName}
+ <br/>
+Email :  ${hotel.email}
+ <br/>
+Contact Number : ${hotel.contactNumber}
+ <br/>
+Address :  ${hotel.address.street}
+ <br/>
+City :  ${hotel.address.city}
+ <br/>
+State :  ${hotel.address.state}
+ <br/>
+Pincode :  ${hotel.address.pincode}
+ <br/>
+Room cost Per day :  ${hotel.room_cost_perDay}
+ <br/>
+
 </body>
 </html>

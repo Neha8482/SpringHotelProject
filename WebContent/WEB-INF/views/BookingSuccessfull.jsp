@@ -7,12 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8080/SpringFinalProject/manager" method="post">
-          UserId : <input type="text" name="userId">
-         <br/>
-          Password : <input type="text" name="password">
-         <br/>
-         <input type="submit" value="Click">
-    </form>
+<h1>Booking successful</h1>
+<p>ID: ${id }</p>
+<a href="/SpringFinalProject/UserLogin">Please click here to log in and see Details of Booking</a>
 </body>
 </html>

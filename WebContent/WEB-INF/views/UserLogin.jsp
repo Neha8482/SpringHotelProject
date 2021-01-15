@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8080/SpringFinalProject/project/user" method="post">
+<form action="http://localhost:8080/SpringFinalProject/user" method="post">
           UserId : <input type="text" name="userId">
          <br/>
           Password : <input type="text" name="password">
